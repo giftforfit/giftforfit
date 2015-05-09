@@ -1,23 +1,67 @@
-<div class="jumbotron">
-  <h1>'Allo, 'Allo!</h1>
-  <p class="lead">
-    <img src="images/yeoman.png" alt="I'm Yeoman"><br>
-    Always a pleasure scaffolding your apps.
-  </p>
-  <p><a class="btn btn-lg btn-success" ng-href="#/">Splendid!<span class="glyphicon glyphicon-ok"></span></a></p>
-</div>
+<div class="wrap"
+     ng-controller="MyCtrl">
 
-<div class="row marketing">
-  <h4>HTML5 Boilerplate</h4>
-  <p>
-    HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.
-  </p>
+    <nav>
+        <ul>
+            <li><img src="images/logo.png"
+                     width="93px"
+                     alt="I'm Yeoman"><br></li>
+            <li><a href="#section-2"
+                   du-smooth-scroll
+                   du-scrollspy>How it works</a></li>
+            <li><a du-smooth-scroll="section-3"
+                   du-scrollspy>Join</a></li>
+        </ul>
+    </nav>
 
-  <h4>Angular</h4>
-  <p>
-    AngularJS is a toolset for building the framework most suited to your application development.
-  </p>
+    <section id="section-1"
+             style="  height: 680px;">
+        <div class="back section1-back"
+                >
+            <div style="padding-top: 400px;
+            padding-left: 100px;
+            max-width: 600px">
+                <h2 style="color: white;">Get discounts</h2>
 
-  <h4>Karma</h4>
-  <p>Spectacular Test Runner for JavaScript.</p>
+                <h2 style="color: white;">for reaching fitness goals</h2>
+
+                <div class="pull-right">
+                    <button type="button"
+                            du-smooth-scroll="section-2"
+                            du-scrollspy
+                            class="btn btn-lg btn-default">How it works
+                    </button>
+
+                    <button type="button"
+                            du-smooth-scroll="section-3"
+                            du-scrollspy
+                            class="btn btn-lg btn-primary">Join
+                    </button>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="section-2"
+             style="padding-top: 100px; height: 680px;background-color:red">
+        <div>
+            <p>Bacon strip steak ground round, tongue pastrami short ribs pork chop venison turducken sausage sirloin.
+               Flank
+               chicken pork chop capicola turkey turducken cow pork loin biltong meatball drumstick pancetta filet
+               mignon
+               ground round fatback. Ham hock jerky short ribs brisket. Meatloaf shoulder pork chop capicola, sirloin
+               swine
+               pig pork. Jerky ribeye hamburger pork loin sirloin kevin bresaola boudin chuck flank. Ham hock pork belly
+               chicken jerky rump bresaola.</p>
+        </div>
+    </section>
+
+    <section id="section-3"
+             style="padding-top: 100px; height: 680px;background-color:red">
+
+    </section>
+
 </div>

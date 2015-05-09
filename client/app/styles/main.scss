@@ -3,89 +3,96 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 @import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
 // endbower
 
-.browsehappy {
-  margin: 0.2em 0;
-  background: #ccc;
-  color: #000;
-  padding: 0.2em 0;
-}
-
-body {
+html, body {
+  margin: 0;
   padding: 0;
+  background: #ebebeb;
 }
 
-/* Everything but the jumbotron gets side spacing for mobile first views */
-.header,
-.marketing,
-.footer {
-  padding-left: 15px;
-  padding-right: 15px;
+body, button {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
-/* Custom page header */
-.header {
-  border-bottom: 1px solid #e5e5e5;
-  margin-bottom: 10px;
-
-  /* Make the masthead heading the same height as the navigation */
-  h3 {
-    margin-top: 0;
-    margin-bottom: 0;
-    line-height: 40px;
-    padding-bottom: 19px;
-  }
+h1 {
+  padding-top: 50px;
 }
 
-/* Custom page footer */
-.footer {
-  padding-top: 19px;
-  color: #777;
-  border-top: 1px solid #e5e5e5;
+img {
+  max-width: 100%;
 }
 
-.container-narrow > hr {
-  margin: 30px 0;
+nav {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  width: 100%;;
+  background: #fff;
+  background: rgba(255, 255, 255, 0.8);
 }
 
-/* Main marketing message and sign up button */
-.jumbotron {
+nav li, nav ul {
+  list-style: none;
+  margin: 0;
+  padding-left: 10px;
+}
+
+nav li, nav a {
+  display: inline-block;
+}
+
+nav a {
+  color: #333;
+  text-decoration: none;
+}
+
+a:hover {
+  background: #fff;
+}
+
+a.active {
+  background: #00AC7F;
+  color: #fff;
+}
+
+.wrap {
+  position: relative;
+  margin: 0 auto;
+  padding: 50px 0px;
+}
+
+.back {
+  float: none;
+  min-height: 0;
+  background-position: center center;
+  width: 100%;
+  margin: 0;
+  background-size: cover;
+  bottom: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  -webkit-backface-visibility: hidden;
+}
+
+.section1-back {
+  margin-top: 61px;
+  height: 680px;
+  background-image: url(http://static0.fitbit.com/simple.b-cssdisabled-jpg.h98296bb4c3c1896a5e37f8a3a42b9ea2.pack?items=%2Fcontent%2Fassets%2Fhome2%2Fimages%2Fslide-04.jpg);
+}
+
+.section {
+  padding: 50px 0 30px 0;
+}
+
+footer {
   text-align: center;
-  border-bottom: 1px solid #e5e5e5;
-
-  .btn {
-    font-size: 21px;
-    padding: 14px 24px;
-  }
 }
 
-/* Supporting marketing content */
-.marketing {
-  margin: 40px 0;
-
-  p + h4 {
-    margin-top: 28px;
-  }
-}
-
-/* Responsive: Portrait tablets and up */
-@media screen and (min-width: 768px) {
-  .container {
-    max-width: 730px;
-  }
-
-  /* Remove the padding we set earlier */
-  .header,
-  .marketing,
-  .footer {
-    padding-left: 0;
-    padding-right: 0;
-  }
-  /* Space out the masthead */
-  .header {
-    margin-bottom: 30px;
-  }
-  /* Remove the bottom border on the jumbotron for visual effect */
-  .jumbotron {
-    border-bottom: 0;
-  }
+button {
+  font-size: 18px;
+  border: 0;
+  padding: 15px 30px;
+  background: #00AC7F;
+  color: #fff;
+  cursor: pointer;
 }

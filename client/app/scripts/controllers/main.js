@@ -1,17 +1,14 @@
 'use strict';
-
-/**
- * @ngdoc function
- * @name giftforfitApp.controller:MainCtrl
- * @description
- * # MainCtrl
- * Controller of the giftforfitApp
- */
-angular.module('giftforfitApp')
-  .controller('MainCtrl', function ($scope) {
-    $scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
-  });
+angular.module('giftforfitApp').
+controller('MyCtrl', function($scope, $document) {
+    $scope.toTheTop = function() {
+      $document.scrollTopAnimated(0, 5000).then(function() {
+        console && console.log('You just scrolled to the top!');
+      });
+    };
+    var section3 = angular.element(document.getElementById('section-3'));
+    $scope.toSection3 = function() {
+      $document.scrollToElementAnimated(section3);
+    }
+  }
+).value('duScrollOffset', 30);

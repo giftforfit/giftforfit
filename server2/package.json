@@ -1,15 +1,18 @@
 {
-  "name": "server2",
-  "version": "0.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "NodejsStarterApp",
+  "version": "0.0.1",
+  "description": "A sample nodejs app for Bluemix",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
+  "scripts": {
+    "start": "node app.js 2>&1 > output.log"
+  },
   "dependencies": {
     "express": "3.0.0",
+    "cfenv": "1.0.x",
     "oauth": ">= 0.8.2",
     "serializer": ">=0.0.2 <0.1.0",
     "fitbit-js": "0.3.1",

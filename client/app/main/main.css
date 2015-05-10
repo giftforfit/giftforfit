@@ -1790,6 +1790,9 @@ img {
 /* line 106, ../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/_scaffolding.scss */
 .img-circle {
     border-radius: 50%;
+    border-radius: 50%;
+    background: #F0EF61;
+    padding: 4px;
 }
 
 /* line 113, ../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/_scaffolding.scss */

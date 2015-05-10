@@ -16,14 +16,8 @@ angular.module('giftforfitApp', [
   $urlRouterProvider.otherwise('/');
   OAuthProvider.setPublicKey('N1LHd6CFEmRJ-8qXi-3PBfO_CXk');
   OAuthProvider.setHandler('fitbit', function() {
-    //console.log(OAuthData.result.access_token, OAuthData);
-    console.log('hello');
-    //$http.get('https://graph.facebook.com/me?access_token=' + OAuthData.result.access_token)
-    //  .then(function(resp) {
-    //    console.log(resp);
+    alert('Thank you, You are subscribed!');
   });
-  //  });
-
   $locationProvider.html5Mode(true);
-}).run(function(Restangular) {
+}).run(function($modal) {
 });

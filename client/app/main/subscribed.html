@@ -1,3 +1,117 @@
-<div ng-init="join()">
-    Welcome to the club!
+<div class="wrap"
+     ng-init="open()"
+     ng-controller="MyCtrl">
+
+    <nav>
+        <ul>
+            <li><img src="assets/images/logo.png"
+                     width="93px"><br></li>
+            <li><a href="#section-2"
+                   du-smooth-scroll
+                   du-scrollspy>How it works</a></li>
+            <li><a du-smooth-scroll="section-3"
+                   du-scrollspy>Places</a></li>
+        </ul>
+        <a class="btn btn-primary pull-right"
+           style=" margin-top: -48px;
+                margin-right: 19px;"
+           ui-sref="join">Join</a>
+    </nav>
+
+    <section id="section-1"
+             style="height: 680px;">
+
+
+        <div class="back section1-back"
+                >
+            <div style="padding-top: 350px;
+            padding-left: 100px;
+            max-width: 480px">
+                <h2 style="color: white;
+                padding-left: 21px;">Get discounts</h2>
+
+                <h2 style="color: white; padding-left: 25px;">for reaching fitness goals</h2>
+
+                <div class="pull-right">
+                    <button type="button"
+                            du-smooth-scroll="section-2"
+                            du-scrollspy
+                            class="btn btn-lg btn-default">How it works
+                    </button>
+
+                    <button type="button"
+                            ui-sref="join"
+                            class="btn btn-lg btn-primary">Join
+                    </button>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="section-2"
+             style="padding-top: 100px; height: 680px;">
+        <div>
+            <h2 class="text-center"
+                style="  margin-top: -40px;  margin-left: -44px;">How it works</h2>
+
+
+            <div class="pricing"
+                 style="padding-top: 145px;">
+                <div class="[ price-option price-option--mid ]">
+                    <div class="price-option__detail">
+
+                        <img src="https://timedotcom.files.wordpress.com/2014/01/fitbit.jpg?quality=65&strip=color&w=750"
+                             class="img-circle"
+                             width="200"
+                             height="200">
+                        <span class="price-option__cost">1</span>
+                    </div>
+                    <a href="#"
+                       class="price-option__purchase">Connect fitness tracker</a>
+                </div>
+                <div class="[ price-option price-option--mid ]">
+                    <div class="price-option__detail">
+
+                        <img src="http://www.o2fitnessclubs.com/wp-content/uploads/2015/01/fitness-Goals-How-To-Set-And-Stick-To-Healthy-Resolutions-O2-Fitness1.jpg"
+                             class="img-circle"
+                             width="200"
+                             height="200">
+
+                        <span class="price-option__cost">2</span>
+                    </div>
+                    <a href="#"
+                       class="price-option__purchase">Reach your daily goal</a>
+                </div>
+                <div class="[ price-option price-option--mid ]">
+                    <div class="price-option__detail">
+
+                        <img src="http://cdn.foodbeast.com.s3.amazonaws.com/content/wp-content/uploads/2013/02/BK-0.25-Coffee.jpg"
+                             class="img-circle"
+                             width="200"
+                             height="200">
+
+                        <span class="price-option__cost">3</span>
+                    </div>
+                    <a href="#"
+                       class="price-option__purchase">Enjoy discounts every day</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="section-3"
+             style="padding-top: 100px; height: 680px; margin-top: -110px;">
+        <h2 class="text-center">Places</h2>
+        <iframe class="center-block"
+                src="https://www.google.com/maps/d/embed?mid=zft1Phdg1Qy8.k5MEPS5PNB38"
+                width="100%"
+                height="480"></iframe>
+
+        <br/>
+        Made at AngelHack Singapore, 2015
+    </section>
+
 </div>

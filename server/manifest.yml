@@ -1,9 +1,0 @@
-applications:
-- disk_quota: 1024M
-  buildpack: php_buildpack
-  host: Gift4Fit
-  name: Gift4Fit
-  path: .
-  domain: mybluemix.net
-  instances: 1
-  memory: 128M

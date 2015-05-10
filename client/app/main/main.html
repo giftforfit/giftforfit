@@ -1,0 +1,122 @@
+<div class="wrap"
+     ng-controller="MyCtrl">
+
+    <nav>
+        <ul>
+            <li><img src="assets/images/logo.png"
+                     width="93px"><br></li>
+            <li><a href="#section-2"
+                   du-smooth-scroll
+                   du-scrollspy>How it works</a></li>
+            <li><a du-smooth-scroll="section-3"
+                   du-scrollspy>Join</a></li>
+        </ul>
+    </nav>
+
+    <section id="section-1"
+             style="height: 680px;">
+
+
+        <div class="back section1-back"
+                >
+            <div style="padding-top: 350px;
+            padding-left: 100px;
+            max-width: 480px">
+                <h2 style="color: white;
+                padding-left: 21px;">Get discounts</h2>
+
+                <h2 style="color: white; padding-left: 25px;">for reaching fitness goals</h2>
+
+                <div class="pull-right">
+                    <button type="button"
+                            du-smooth-scroll="section-2"
+                            du-scrollspy
+                            class="btn btn-lg btn-default">How it works
+                    </button>
+
+                    <!--ng-click="join()"-->
+                    <button type="button"
+                            ui-sref="join"
+                            class="btn btn-lg btn-primary">Join
+                    </button>
+                </div>
+
+                <oauth site="https://oauth-ng-server.herokuapp.com"
+                       client-id="23c6ceaba56c00e940f890acc9f4c75a94991c62f5561338b6311f7026343d58"
+                       redirect-uri="http://localhost:9000/join"
+                       profile-uri="https://oauth-ng-server.herokuapp.com/api/v1/me"
+                       scope="public">
+                </oauth>
+
+                <div class="token"
+                     ng-if="accessToken">
+                    with access token {{accessToken}}
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="section-2"
+             style="padding-top: 100px; height: 680px;">
+        <div>
+            <h2 class="text-center"
+                style="  margin-top: -40px;">How it works</h2>
+
+
+            <div class="pricing">
+                <div class="[ price-option price-option--mid ]">
+                    <div class="price-option__detail">
+                        <span class="price-option__cost">1</span>
+
+                        <img src="https://timedotcom.files.wordpress.com/2014/01/fitbit.jpg?quality=65&strip=color&w=750"
+                             class="img-circle"
+                             alt="Cinque Terre"
+                             width="200"
+                             height="200">
+
+                        <span class="price-option__type">Connect your fitness tracker</span>
+                    </div>
+                    <a href="#"
+                       class="price-option__purchase">Connect</a>
+                </div>
+                <div class="[ price-option price-option--mid ]">
+                    <div class="price-option__detail">
+                        <span class="price-option__cost">2</span>
+                        <span class="price-option__type">Reach your daily goal</span>
+                    </div>
+                    <a href="#"
+                       class="price-option__purchase">Reach</a>
+                </div>
+                <div class="[ price-option price-option--mid ]">
+                    <div class="price-option__detail">
+                        <span class="price-option__cost">3</span>
+                        <span class="price-option__type">Enjoy new discounts every day</span>
+                    </div>
+                    <a href="#"
+                       class="price-option__purchase">Enjoy</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="section-3"
+             style="padding-top: 100px; height: 680px;">
+        <h2 class="text-center">Places</h2>
+        <iframe class="center-block"
+                src="https://www.google.com/maps/d/embed?mid=zft1Phdg1Qy8.k5MEPS5PNB38"
+                width="100%"
+                height="480"></iframe>
+        <button type="button"
+                du-smooth-scroll="section-3"
+                du-scrollspy
+                ng-click="join()"
+                class="btn btn-lg btn-primary center-block">Join
+        </button>
+
+    </section>
+
+</div>
